@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../JS/index.js"></script>
+    <title>Constellation</title>
+</head>
+<body>
+    <div class="holder">
+
+        <div id ="header" class="header">
+            
+            <video autoplay loop muted class="back-video">
+                <source src="../Resources/final-back-video.mp4" type="video/mp4">
+            </video>
+
+            <nav>
+                <a href="#"><img src="../Resources/logo.png" alt="BRAINATHON_LOGO" class="logo"></a>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#box">SERVICES</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <div class="content">
+                <h2>By giving your name get</h2>
+                <h1>Constellation</h1>
+            </div>
+
+            <div class="main-box">
+
+                <div id="box" class="box">
+                    <form>
+                        <div class="inputBox">
+                            <label>Enter your name only (Hindu name only):</label>
+                            <input type="text" class="input-box" name="username" autocomplete="off" id="name" required/>
+                        </div>
+                        <div class="btn">
+                            <a href="#show-diagram" onclick="validation()">Get Constellation</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+        <div id="show-diagram">
+            <div id="card">
+                <div class="s-d-l">
+
+                    <canvas id="myCanvas" width="600" height="550"></canvas>
+                    <button id="downloadButton">Download Image</button>
+                </div>
+                <div class="s-d-r">
+                    <img src="#" alt="Constellation Image" id="card-img">
+                    <p id="card-para">Constellation Name</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer" id="footer">
+            <div class="thankyou">
+                <p>Thankyou for Visiting the Constellation Project.</p><p> Project done by Team 07</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
